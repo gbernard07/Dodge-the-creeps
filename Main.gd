@@ -6,7 +6,8 @@ var score
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	new_game()
+#	new_game()
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -41,6 +42,7 @@ func _on_mob_timer_timeout():
 	mob.linear_velocity = velocity.rotated(direction)
 	
 	add_child(mob)
+
 
 func _on_score_timer_timeout():
 	score += 1
